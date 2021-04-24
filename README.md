@@ -1,2 +1,6 @@
-# tui-config
-Configuration files for TUI/CLI programs
+# Terminal User Interface configuration files
+
+Configuration files for:
+- Zsh
+- Tmux
+- Neovim
