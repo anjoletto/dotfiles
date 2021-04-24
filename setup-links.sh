@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 echo "Linking configuration files..."
 ln -s $(pwd)/zsh/zshenv $HOME/.zshenv
