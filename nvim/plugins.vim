@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugins')
     Plug 'neoclide/coc.nvim', {'branch': 'release'} " completion
     Plug 'Yggdroot/indentLine' " mark indentation
     Plug 'itchyny/lightline.vim' " simple status line
+    Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 call plug#end()
 
