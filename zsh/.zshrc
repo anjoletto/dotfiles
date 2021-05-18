@@ -72,13 +72,17 @@ setopt EXTENDED_GLOB
 # custom prompt
 PROMPT="%(?.%F{green}.%F{red})%(!.>>.->)%F{gray} "
 
-autoload -Uz vcs_info
 setopt prompt_subst
+autoload -Uz vcs_info
+
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' get-revision true
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr ' +'
+zstyle ':vcs_info:*' unstagedstr ' *'
+zstyle ':vcs_info:*' formats '%F{green}[%b%u]'
 
 precmd_functions+=( vcs_info )
-
-zstyle ':vcs_info:*:' enable git
-zstyle ':vcs_info:git:*' check-for-changes false
-zstyle ':vcs_info:*:*' formats '%F{green}[%b]'
 
 RPROMPT=' ${vcs_info_msg_0_}%F{red}[%m]%F{yellow}[%4~]%F{cyan}[%D{%H:%M}]%F{gray}'
