@@ -55,6 +55,7 @@ fi
 alias tmux='tmux -2 -f $HOME/.config/tmux.conf'
 alias dd='dd status=progress'
 alias ls='exa'
+alias devenv='xhost + && lxc start dev && lxc exec dev login'
 
 export XZ_OPT=-9
 ROOT_PATH="/usr/local/sbin:/usr/sbin:/sbin"
