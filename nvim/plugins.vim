@@ -7,6 +7,7 @@ call plug#begin('~/.config/nvim/plugins')
     Plug 'Yggdroot/indentLine' " mark indentation
     Plug 'itchyny/lightline.vim' " simple status line
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+    Plug 'vimwiki/vimwiki'
 
 call plug#end()
 

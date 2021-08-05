@@ -39,6 +39,7 @@ set showmatch             " show matching (), [], {}, etc.
 set nolist                " show any line break char
 set colorcolumn=80        " show line at 80th char
 set termguicolors
+set conceallevel=0        " show all characters
 
 " ---------------------------------------------------------------------------- "
 " File type specific stuff

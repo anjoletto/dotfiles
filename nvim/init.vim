@@ -14,4 +14,5 @@ source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/nord-theme.vim
 source $HOME/.config/nvim/lightline.vim
 source $HOME/.config/nvim/markdown-preview.vim
+source $HOME/.config/nvim/vimwiki.vim
 " ---------------------------------------------------------------------------- "
