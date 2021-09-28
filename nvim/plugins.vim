@@ -8,6 +8,8 @@ call plug#begin('~/.config/nvim/plugins')
     Plug 'itchyny/lightline.vim' " simple status line
     Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
     Plug 'vimwiki/vimwiki'
+    Plug 'junegunn/fzf.vim'
+    Plug 'metakirby5/codi.vim'
 
 call plug#end()
 
