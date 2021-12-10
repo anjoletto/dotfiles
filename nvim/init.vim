@@ -16,4 +16,5 @@ source $HOME/.config/nvim/keymappings.vim
 source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/lsp.vim
 source $HOME/.config/nvim/cmp.vim
+source $HOME/.config/nvim/indents.vim
 " ---------------------------------------------------------------------------- "

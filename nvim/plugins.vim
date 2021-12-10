@@ -5,6 +5,8 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'itchyny/lightline.vim' " simple status line
   Plug 'junegunn/goyo.vim'
   Plug 'junegunn/limelight.vim'
+  "Plug 'Yggdroot/indentLine' " mark indentation
+  Plug 'lukas-reineke/indent-blankline.nvim'
 
   " LSP stuff
   Plug 'neovim/nvim-lspconfig'
@@ -19,7 +21,6 @@ call plug#begin('~/.config/nvim/plugins')
 
   " helpers
   Plug 'jiangmiao/auto-pairs' " pairs of (), [], {}, etc
-  Plug 'Yggdroot/indentLine' " mark indentation
   Plug 'machakann/vim-sandwich'
 
   " functionality
