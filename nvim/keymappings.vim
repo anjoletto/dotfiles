@@ -1,5 +1,5 @@
 ": set leader key
-let mapleader = ";"
+let mapleader = ' '
 
 " tab completion
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
