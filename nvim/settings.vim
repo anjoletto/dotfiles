@@ -21,6 +21,7 @@ set softtabstop=2         " number of spaces in editing operations
 set smarttab              " move by `shiftwidth` in blank lines
 set smartindent           " indent by file type
 set laststatus=2          " always display status line
+set statusline+=%F
 set numberwidth=4         " number of characters in line numbering
 set relativenumber        " set relative numbering as default...
 set number                " but show current line's line number
@@ -33,13 +34,21 @@ set noswapfile            " don't generate swap file
 set timeoutlen=500        " set time to complete mapped sequence
 set formatoptions-=cro    " set auto formatting
 set clipboard=unnamedplus " copy between vim and any GUI stuff
-set autochdir             " change to file directory
+"set autochdir             " change to file directory
 set scrolloff=5           " keep some lines in top and bottom
 set showmatch             " show matching (), [], {}, etc.
 set nolist                " show any line break char
 set colorcolumn=80        " show line at 80th char
-set termguicolors
 set conceallevel=0        " show all characters
+set termguicolors
+set fillchars+=eob:\ 
+
+" ---------------------------------------------------------------------------- "
+"  set spell checking for more than one language for all files
+" ---------------------------------------------------------------------------- "
+autocmd FileType markdown setlocal spell
+autocmd FileType markdown setlocal spelllang=pt,en
+" ---------------------------------------------------------------------------- "
 
 " ---------------------------------------------------------------------------- "
 " File type specific stuff
@@ -51,14 +60,4 @@ set wildignore+=*.DS_Store,*.db                                  " apple
 set wildignore+=*.exe,*.app                                      " executables
 set wildignore+=*.o,*.pyc,*.class                                " coding
 set wildignore+=*.aux,*.bbl,*.blg,*.loa,*.lof,*.toc,*.out,*.log  " latex
-" ---------------------------------------------------------------------------- "
-
-" ---------------------------------------------------------------------------- "
-" netrw configuration
-" ---------------------------------------------------------------------------- "
-let g:netrw_liststyle=3
-let g:netrw_banner=0
-let g:netrw_browse_split=3
-let g:netrw_winsize=20
-let g:netrw_altv=4
 " ---------------------------------------------------------------------------- "
