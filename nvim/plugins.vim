@@ -35,4 +35,3 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'junegunn/fzf.vim'
 
 call plug#end()
-
