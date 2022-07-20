@@ -1,2 +1,1 @@
 export ZDOTDIR="${${(%):-%x}:P:h}"
-. "$HOME/.cargo/env"
