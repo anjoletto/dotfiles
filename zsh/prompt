@@ -25,6 +25,7 @@ P_TIME="%F{cyan}(%D{%H:%M:%S})"
 P_HOSTNAME="%F{red}%m"
 P_DIR="%F{yellow}%4~"
 
-PROMPT=$'$P_TIME $P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
+PROMPT=$'$P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
+#PROMPT=$'$P_TIME $P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
 RPROMPT=' %{$(echotc UP 1)%} $P_TIME%F{gray}%{$(echotc DO 1)%}'
 #RPROMPT=''
