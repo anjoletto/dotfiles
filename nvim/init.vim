@@ -19,5 +19,5 @@ source $HOME/.config/nvim/cmp.vim
 source $HOME/.config/nvim/indents.vim
 source $HOME/.config/nvim/gitsigns.vim
 source $HOME/.config/nvim/floaterm.vim
-source $HOME/.config/nvim/vimwiki.vim
+source $HOME/.config/nvim/tabnine.vim
 " ---------------------------------------------------------------------------- "

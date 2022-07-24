@@ -26,9 +26,9 @@ call plug#begin('~/.config/nvim/plugins')
 
   " functionality
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-  Plug 'vimwiki/vimwiki'
   Plug 'metakirby5/codi.vim'
   Plug 'voldikss/vim-floaterm'
+  Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 
   " navigation
   Plug 'junegunn/fzf'
