@@ -1,3 +1,5 @@
+setopt auto_cd
+
 autoload -Uz promptinit
 promptinit
 
