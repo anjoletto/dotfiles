@@ -17,4 +17,5 @@ alias go="git checkout"
 
 alias ca='conda activate'
 alias cda='conda deactivate'
-alias cl='conda env list'
+alias ce='conda env'
+alias ci='conda install'
