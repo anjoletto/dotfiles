@@ -1,5 +1,7 @@
 setopt auto_cd
 
+set -o vi
+
 autoload -Uz promptinit
 promptinit
 
