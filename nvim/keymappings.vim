@@ -25,4 +25,3 @@ noremap <leader>p :tabprevious<CR>
 noremap <leader>n :tabnext<CR>
 
 noremap <leader><Tab> <C-w><C-r>
-noremap <leader>t <C-w>T

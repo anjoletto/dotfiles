@@ -3,8 +3,6 @@ call plug#begin('~/.config/nvim/plugins')
   " appearence
   Plug 'arcticicestudio/nord-vim' " nord theme for vim/neovim
   Plug 'itchyny/lightline.vim' " simple status line
-  Plug 'junegunn/goyo.vim'
-  Plug 'junegunn/limelight.vim'
   Plug 'lukas-reineke/indent-blankline.nvim'
 
   " LSP stuff
@@ -25,10 +23,7 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'lewis6991/gitsigns.nvim'
 
   " functionality
-  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'metakirby5/codi.vim'
-  Plug 'voldikss/vim-floaterm'
-  Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 
   " navigation
   Plug 'junegunn/fzf'
