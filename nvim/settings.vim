@@ -1,7 +1,7 @@
 " ---------------------------------------------------------------------------- "
 "  common configuration for all file types
 " ---------------------------------------------------------------------------- "
-syntax enable             " syntax highlighting
+"syntax enable             " syntax highlighting
 set hidden                " keep buffers open
 set wrap                  " wrap lines when off screen
 set fileencoding=utf-8    " set encoding when writing

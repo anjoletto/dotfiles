@@ -17,4 +17,6 @@ source $HOME/.config/nvim/lsp.vim
 source $HOME/.config/nvim/cmp.vim
 source $HOME/.config/nvim/indents.vim
 source $HOME/.config/nvim/gitsigns.vim
+source $HOME/.config/nvim/tree.vim
+source $HOME/.config/nvim/treesitter.vim
 " ---------------------------------------------------------------------------- "

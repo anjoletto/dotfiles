@@ -28,5 +28,7 @@ call plug#begin('~/.config/nvim/plugins')
   " navigation
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'kyazdani42/nvim-tree.lua'
 
 call plug#end()
