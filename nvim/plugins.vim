@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'arcticicestudio/nord-vim' " nord theme for vim/neovim
   Plug 'itchyny/lightline.vim' " simple status line
   Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
   " LSP stuff
   Plug 'neovim/nvim-lspconfig'
@@ -14,16 +15,12 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'hrsh7th/vim-vsnip'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
   " helpers
   Plug 'jiangmiao/auto-pairs' " pairs of (), [], {}, etc
   Plug 'machakann/vim-sandwich'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
-
-  " functionality
-  Plug 'metakirby5/codi.vim'
 
   " navigation
   Plug 'junegunn/fzf'
