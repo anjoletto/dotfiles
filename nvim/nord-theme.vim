@@ -12,7 +12,3 @@ let g:nord_bold = 1
 let g:nord_italic = 1
 "let g:nord_italic_comments = 1
 let g:nord_underline = 1
-
-" Limelight configuration
-let g:limelight_conceal_ctermfg = 'Darkgray'
-let g:limelight_default_coeficient = 0.7
