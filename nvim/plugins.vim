@@ -1,10 +1,10 @@
 call plug#begin('~/.config/nvim/plugins')
 
   " appearence
-  Plug 'arcticicestudio/nord-vim' " nord theme for vim/neovim
-  Plug 'itchyny/lightline.vim' " simple status line
+  Plug 'arcticicestudio/nord-vim'
+  Plug 'itchyny/lightline.vim'
   Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
   " LSP stuff
   Plug 'neovim/nvim-lspconfig'
@@ -17,7 +17,7 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'hrsh7th/vim-vsnip'
 
   " helpers
-  Plug 'jiangmiao/auto-pairs' " pairs of (), [], {}, etc
+  Plug 'jiangmiao/auto-pairs'
   Plug 'machakann/vim-sandwich'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
