@@ -15,17 +15,25 @@ call plug#begin('~/.config/nvim/plugins')
   Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'hrsh7th/vim-vsnip'
+  Plug 'psf/black'
 
   " helpers
-  Plug 'jiangmiao/auto-pairs'
+  Plug 'windwp/nvim-autopairs'
   Plug 'machakann/vim-sandwich'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
+  if has('python3') && has('timers')
+    Plug 'danth/pathfinder.vim'
+  else
+    echoerr 'pathfinder.vim is not supported on this Vim installation'
+  endif
 
   " navigation
   Plug 'junegunn/fzf'
   Plug 'junegunn/fzf.vim'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
+
+  Plug 'dstein64/vim-startuptime'
 
 call plug#end()

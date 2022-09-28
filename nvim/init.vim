@@ -19,4 +19,6 @@ source $HOME/.config/nvim/indents.vim
 source $HOME/.config/nvim/gitsigns.vim
 source $HOME/.config/nvim/tree.vim
 source $HOME/.config/nvim/treesitter.vim
+source $HOME/.config/nvim/black.vim
+source $HOME/.config/nvim/autopairs.vim
 " ---------------------------------------------------------------------------- "
