@@ -1,39 +1,54 @@
-call plug#begin('~/.config/nvim/plugins')
+lua << EOF
+ -- from packer github repo
+ local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
 
-  " appearence
-  Plug 'arcticicestudio/nord-vim'
-  Plug 'itchyny/lightline.vim'
-  Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+local packer_bootstrap = ensure_packer()
 
-  " LSP stuff
-  Plug 'neovim/nvim-lspconfig'
-  Plug 'hrsh7th/cmp-nvim-lsp'
-  Plug 'hrsh7th/cmp-buffer'
-  Plug 'hrsh7th/cmp-path'
-  Plug 'hrsh7th/cmp-cmdline'
-  Plug 'hrsh7th/nvim-cmp'
-  Plug 'hrsh7th/cmp-vsnip'
-  Plug 'hrsh7th/vim-vsnip'
-  Plug 'psf/black'
+return require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim'
 
-  " helpers
-  Plug 'windwp/nvim-autopairs'
-  Plug 'machakann/vim-sandwich'
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'lewis6991/gitsigns.nvim'
-  if has('python3') && has('timers')
-    Plug 'danth/pathfinder.vim'
-  else
-    echoerr 'pathfinder.vim is not supported on this Vim installation'
-  endif
+  -- appearence
+  use 'arcticicestudio/nord-vim'
+  use 'itchyny/lightline.vim'
+  use 'lukas-reineke/indent-blankline.nvim'
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
-  " navigation
-  Plug 'junegunn/fzf'
-  Plug 'junegunn/fzf.vim'
-  Plug 'kyazdani42/nvim-web-devicons'
-  Plug 'kyazdani42/nvim-tree.lua'
+  -- LSP stuff
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+  use 'psf/black'
 
-  Plug 'dstein64/vim-startuptime'
+  -- helpers
+  use 'windwp/nvim-autopairs'
+  use 'machakann/vim-sandwich'
+  use 'nvim-lua/plenary.nvim'
+  use 'lewis6991/gitsigns.nvim'
 
-call plug#end()
+  -- navigation
+  use 'junegunn/fzf'
+  use 'junegunn/fzf.vim'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+ 
+  if packer_bootstrap then
+    require('packer').sync()
+  end
+
+end
+)
+EOF
