@@ -41,6 +41,9 @@ return require('packer').startup(function(use)
   use 'junegunn/fzf.vim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
+
+  -- databases
+  -- use 'jrop/mongo.nvim'
  
   if packer_bootstrap then
     require('packer').sync()
