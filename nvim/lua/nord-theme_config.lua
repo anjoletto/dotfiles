@@ -1,3 +1,4 @@
+vim.cmd([[
 colorscheme nord 
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
@@ -12,3 +13,4 @@ let g:nord_bold = 1
 let g:nord_italic = 1
 "let g:nord_italic_comments = 1
 let g:nord_underline = 1
+]])

@@ -1,4 +1,3 @@
-lua << EOF
 -- examples for your init.lua
 
 -- empty setup using defaults
@@ -22,7 +21,8 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
-EOF
 
+vim.cmd([[
 noremap <leader>e :NvimTreeToggle<CR>
 noremap <leader>E :NvimTreeFocus<CR>
+]])

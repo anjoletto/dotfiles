@@ -1,4 +1,3 @@
-lua << EOF
  -- from packer github repo
  local ensure_packer = function()
   local fn = vim.fn
@@ -23,16 +22,14 @@ return require('packer').startup(function(use)
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
   -- LSP stuff
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/vim-vsnip'
-  use 'psf/black'
-
+  use "neovim/nvim-lspconfig"
+  use "hrsh7th/nvim-cmp"
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "saadparwaiz1/cmp_luasnip"
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
+	
   -- helpers
   use 'windwp/nvim-autopairs'
   use 'machakann/vim-sandwich'
@@ -51,4 +48,3 @@ return require('packer').startup(function(use)
 
 end
 )
-EOF

@@ -1,3 +1,4 @@
+vim.cmd([[
 " ---------------------------------------------------------------------------- "
 "  common configuration for all file types
 " ---------------------------------------------------------------------------- "
@@ -61,3 +62,4 @@ set wildignore+=*.exe,*.app                                      " executables
 set wildignore+=*.o,*.pyc,*.class                                " coding
 set wildignore+=*.aux,*.bbl,*.blg,*.loa,*.lof,*.toc,*.out,*.log  " latex
 " ---------------------------------------------------------------------------- "
+]])

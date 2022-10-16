@@ -1,3 +1,4 @@
+vim.cmd([[
 ": set leader key
 let mapleader = ' '
 
@@ -25,3 +26,4 @@ noremap <leader>p :tabprevious<CR>
 noremap <leader>n :tabnext<CR>
 
 noremap <leader><Tab> <C-w><C-r>
+]])
