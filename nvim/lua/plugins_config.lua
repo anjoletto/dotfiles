@@ -17,7 +17,8 @@ return require('packer').startup(function(use)
 
   -- appearence
   use 'arcticicestudio/nord-vim'
-  use 'itchyny/lightline.vim'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'nvim-lualine/lualine.nvim' 
   use 'lukas-reineke/indent-blankline.nvim'
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
@@ -39,7 +40,6 @@ return require('packer').startup(function(use)
   -- navigation
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
-  use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
   -- databases
