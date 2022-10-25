@@ -42,6 +42,9 @@ return require('packer').startup(function(use)
   use 'junegunn/fzf.vim'
   use 'kyazdani42/nvim-tree.lua'
 
+  -- programming
+  use 'psf/black'
+
   -- databases
   -- use 'jrop/mongo.nvim'
  
