@@ -30,3 +30,8 @@ o.wildignore = {
   "*.o", "*.pyc", "*.class",              -- executables
   "*.aux", "*.bbl", "*.blg", "*.loa", "*.lof", "*.toc", "*.out", "*.log" -- latex
 }
+
+vim.cmd([[
+set noswapfile
+set nobackup
+]])
