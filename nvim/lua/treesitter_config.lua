@@ -1,4 +1,3 @@
-lua <<EOF
 require 'nvim-treesitter.install'.compilers = { 'clang++'}
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "lua", "python", "sql" },
@@ -9,4 +8,3 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-EOF
