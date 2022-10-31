@@ -19,6 +19,7 @@ o.autochdir = true          -- change to file directory
 o.scrolloff = 10            -- keep some lines in top and bottom
 o.showmatch = true          -- show matching (), [], {}, etc.
 o.colorcolumn = {80}        -- show line at 80th char
+o.termguicolors = true
 
 -- set spell checking for every filetype
 o.spell = true
