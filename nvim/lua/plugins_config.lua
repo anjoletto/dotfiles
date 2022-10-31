@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim' 
   use 'lukas-reineke/indent-blankline.nvim'
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use 'nvim-treesitter/nvim-treesitter-context'
 
   -- LSP stuff
   use "neovim/nvim-lspconfig"
@@ -43,6 +44,7 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
 
   -- programming
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function() require("toggleterm").setup() end}
   use 'psf/black'
 
   -- databases
