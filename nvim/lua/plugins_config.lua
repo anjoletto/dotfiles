@@ -31,7 +31,8 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-	
+  use {"tzachar/cmp-tabnine", run="./install.sh", requires="hrsh7th/nvim-cmp"}
+
   -- helpers
   use 'windwp/nvim-autopairs'
   use 'machakann/vim-sandwich'
@@ -41,11 +42,12 @@ return require('packer').startup(function(use)
   -- navigation
   use 'junegunn/fzf'
   use 'junegunn/fzf.vim'
-  use 'kyazdani42/nvim-tree.lua'
+  --use 'kyazdani42/nvim-tree.lua'
 
   -- programming
   use {"akinsho/toggleterm.nvim", tag = '*', config = function() require("toggleterm").setup() end}
   use 'psf/black'
+  use "fatih/vim-go"
 
   -- databases
   -- use 'jrop/mongo.nvim'
@@ -56,3 +58,4 @@ return require('packer').startup(function(use)
 
 end
 )
+
