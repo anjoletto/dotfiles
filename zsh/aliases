@@ -13,7 +13,7 @@ alias gc="git commit -m"
 alias gp="git push"
 alias gf="git fetch"
 alias gl="git log"
-alias go="git checkout"
+alias gct="git checkout"
 
 alias ca='conda activate'
 alias cda='conda deactivate'
