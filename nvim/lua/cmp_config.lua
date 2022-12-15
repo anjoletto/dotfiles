@@ -16,8 +16,8 @@ cmp.setup({
     documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({
-    ["<Tab>"] = cmp.mapping.select_next_item(),
-    ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+    ["<C-n>"] = cmp.mapping.select_next_item(),
+    ["<C-p>"] = cmp.mapping.select_prev_item(),
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
@@ -25,13 +25,8 @@ cmp.setup({
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
   }),
   sources = cmp.config.sources({
-    { name = "cmp_tabnine" },
-    --{ name = 'nvim_lsp' },
-    --{ name = 'nvim_lua' },
-    -- { name = 'vsnip' }, -- For vsnip users.
+    { name = 'nvim_lsp' },
     { name = 'luasnip' }, -- For luasnip users.
-    -- { name = 'ultisnips' }, -- For ultisnips users.
-    -- { name = 'snippy' }, -- For snippy users.
   }, {
     { name = 'buffer' },
   })
