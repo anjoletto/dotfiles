@@ -1,9 +1,9 @@
  -- from packer github repo
  local ensure_packer = function()
   local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  local install_path = fn.stdpath("data").."/site/pack/packer/start/packer.nvim"
   if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    fn.system({"git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path})
     vim.cmd [[packadd packer.nvim]]
     return true
   end
@@ -12,16 +12,16 @@ end
 
 local packer_bootstrap = ensure_packer()
 
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim'
+return require("packer").startup(function(use)
+  use "wbthomason/packer.nvim"
 
   -- appearence
-  use 'arcticicestudio/nord-vim'
-  use 'kyazdani42/nvim-web-devicons'
-  use 'nvim-lualine/lualine.nvim' 
-  use 'lukas-reineke/indent-blankline.nvim'
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-  use 'nvim-treesitter/nvim-treesitter-context'
+  use "arcticicestudio/nord-vim"
+  use "kyazdani42/nvim-web-devicons"
+  use "nvim-lualine/lualine.nvim" 
+  use "lukas-reineke/indent-blankline.nvim"
+  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+  use "nvim-treesitter/nvim-treesitter-context"
 
   -- LSP stuff
   use "neovim/nvim-lspconfig"
@@ -34,19 +34,20 @@ return require('packer').startup(function(use)
   use "github/copilot.vim"
 
   -- helpers
-  use 'windwp/nvim-autopairs'
-  use 'machakann/vim-sandwich'
-  use 'nvim-lua/plenary.nvim'
-  use 'lewis6991/gitsigns.nvim'
+  use "windwp/nvim-autopairs"
+  use "machakann/vim-sandwich"
+  use "nvim-lua/plenary.nvim"
+  use "lewis6991/gitsigns.nvim"
 
   -- navigation
-  use 'junegunn/fzf'
-  use 'junegunn/fzf.vim'
+  use "junegunn/fzf"
+  use "junegunn/fzf.vim"
 
   -- programming
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function() require("toggleterm").setup() end}
-  use 'psf/black'
+  use {"akinsho/toggleterm.nvim", tag = "*", config = function() require("toggleterm").setup() end}
+  use "psf/black"
   use "fatih/vim-go"
+  use "kdheepak/lazygit.nvim"
 
   -- databases
   --use "tpope/vim-dadbod"
@@ -54,7 +55,7 @@ return require('packer').startup(function(use)
   --use "kristijanhusak/vim-dadbod-completion"
  
   if packer_bootstrap then
-    require('packer').sync()
+    require("packer").sync()
   end
 
 end
