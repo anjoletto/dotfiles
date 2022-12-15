@@ -1,6 +1,6 @@
 require 'nvim-treesitter.install'.compilers = { "clang", "clang++"}
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "lua", "python", "sql", "rust" },
+  ensure_installed = { "nix", "lua", "python", "sql", "rust", "go" },
   sync_install = false,
   auto_install = true,
   highlight = {
