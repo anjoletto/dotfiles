@@ -1,6 +1,8 @@
 vim.cmd([[
-leg g:db_ui_save_location = '~/sql'
-leg g:db_ui_use_nerd_fonts = 1
+let g:db_ui_save_location = '~/sql'
+let g:db_ui_use_nerd_fonts = 1
+let g:db_ui_winwidth = 30
 ]])
 
-vim.keymap.nnoremap({"n", "<leader>db", ":DBUIToggle<CR>"})
+vim.keymap.set("n", "<leader>db", ":DBUIToggle<CR>", {noremap = true})
+
