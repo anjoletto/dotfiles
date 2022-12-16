@@ -42,6 +42,7 @@ return require("packer").startup(function(use)
   -- navigation
   use "junegunn/fzf"
   use "junegunn/fzf.vim"
+  use "mbbill/undotree"
 
   -- programming
   use {"akinsho/toggleterm.nvim", tag = "*", config = function() require("toggleterm").setup() end}
