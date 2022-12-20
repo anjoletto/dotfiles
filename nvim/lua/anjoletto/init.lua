@@ -1,0 +1,8 @@
+require("anjoletto.packer")
+require("anjoletto.settings")
+require("anjoletto.keybidings")
+require("anjoletto.appearance")
+require("anjoletto.treesitter")
+require("anjoletto.utils")
+require("anjoletto.lsp")
+require("anjoletto.custom")
