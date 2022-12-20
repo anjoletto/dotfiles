@@ -1,5 +1,0 @@
-vim.keymap.set("n", "<leader>f", "<cmd>Files<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>F", "<cmd>Files ..<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>h", "<cmd>Files ~<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>r", "<cmd>Rg<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>a", "<cmd>Ag<CR>", {noremap = true})
