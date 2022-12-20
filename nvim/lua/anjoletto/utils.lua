@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>b", require("telescope.builtin").buffers, {})
 --------------------------------------------------------------------------------
 -- undo tree
 --------------------------------------------------------------------------------
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. ".config/nvim/undodir"
 vim.opt.undofile = true
 vim.keymap.set("n", "<leader>U", ":UndotreeToggle<CR>")
 --------------------------------------------------------------------------------
