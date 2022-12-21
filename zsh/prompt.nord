@@ -17,13 +17,13 @@ zstyle ':vcs_info:*' get-revision true
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr ' ^'
 zstyle ':vcs_info:*' unstagedstr ' *'
-zstyle ':vcs_info:*' formats '%F{blue}[%b%u]'
+zstyle ':vcs_info:*' formats '%F{green}[%b%u]'
 
 # set variables for prompt
-P_INIT="%(?.%F{cyan}.%F{red})%(!.>>.->)%F{gray}"
+P_INIT="%(?.%F{green}.%F{red})%(!.>>.->)%F{gray}"
 P_TIME="%F{cyan}(%D{%H:%M:%S})"
-P_HOSTNAME="%F{blue}%m"
-P_DIR="%F{cyan}%4~"
+P_HOSTNAME="%F{red}%m"
+P_DIR="%F{yellow}%4~"
 
 PROMPT=$'$P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
 #PROMPT=$'$P_TIME $P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
