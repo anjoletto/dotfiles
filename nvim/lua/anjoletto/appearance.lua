@@ -2,7 +2,7 @@
 -- colorscheme configuration
 --------------------------------------------------------------------------------
 vim.cmd([[
-colorscheme nord 
+colorscheme nord
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
@@ -79,4 +79,12 @@ require("indent_blankline").setup {
         "IndentBlanklineIndent1",
     },
 }
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-- netrw
+--------------------------------------------------------------------------------
+vim.g.netrw_browser_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 30
 --------------------------------------------------------------------------------
