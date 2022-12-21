@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use "nvim-lualine/lualine.nvim" 
   use "lukas-reineke/indent-blankline.nvim"
+  use "j-hui/fidget.nvim"
   ------------------------------------------------------------------------------
 
   ------------------------------------------------------------------------------
@@ -86,7 +87,7 @@ return require('packer').startup(function(use)
 
   ------------------------------------------------------------------------------
   -- go
-  -- use "fatih/vim-go"
+  use "fatih/vim-go"
   ------------------------------------------------------------------------------
 
 
