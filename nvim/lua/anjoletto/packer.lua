@@ -12,7 +12,7 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-		
+
   ------------------------------------------------------------------------------
   -- packer will install packer
   ------------------------------------------------------------------------------
@@ -23,10 +23,12 @@ return require('packer').startup(function(use)
   -- appearance
   ------------------------------------------------------------------------------
   use "arcticicestudio/nord-vim"
+  use "cocopon/iceberg.vim"
   use "kyazdani42/nvim-web-devicons"
-  use "nvim-lualine/lualine.nvim" 
+  use "nvim-lualine/lualine.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "j-hui/fidget.nvim"
+  use "chrisbra/Colorizer"
   ------------------------------------------------------------------------------
 
   ------------------------------------------------------------------------------
@@ -79,7 +81,7 @@ return require('packer').startup(function(use)
   ------------------------------------------------------------------------------
   -- plugins by programming languages
   ------------------------------------------------------------------------------
-  
+
   ------------------------------------------------------------------------------
   -- python
   -- use "psf/black"
@@ -97,7 +99,7 @@ return require('packer').startup(function(use)
   -- use "kristijanhusak/vim-dadbod-ui"
   -- use "kristijanhusak/vim-dadbod-completion"
   ------------------------------------------------------------------------------
-  
+
   if packer_bootstrap then
     require('packer').sync()
   end

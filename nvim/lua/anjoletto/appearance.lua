@@ -1,22 +1,23 @@
 --------------------------------------------------------------------------------
 -- colorscheme configuration
 --------------------------------------------------------------------------------
-vim.cmd([[
-colorscheme nord
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
-
-" color configuration
-let g:nord_cursor_line_number_background = 0
-let g:nord_bold_vertical_split_line = 0
-let g:nord_uniform_diff_background = 1
-
-" font configuration
-let g:nord_bold = 1
-let g:nord_italic = 1
-"let g:nord_italic_comments = 1
-let g:nord_underline = 1
-]])
+vim.cmd [[ colorscheme iceberg ]]
+--vim.cmd([[
+--colorscheme nord
+--hi! Normal ctermbg=NONE guibg=NONE
+--hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+--
+--" color configuration
+--let g:nord_cursor_line_number_background = 0
+--let g:nord_bold_vertical_split_line = 0
+--let g:nord_uniform_diff_background = 1
+--
+--" font configuration
+--let g:nord_bold = 1
+--let g:nord_italic = 1
+--"let g:nord_italic_comments = 1
+--let g:nord_underline = 1
+--]])
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -87,4 +88,14 @@ require("indent_blankline").setup {
 vim.g.netrw_browser_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 30
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+-- colorizer
+vim.cmd [[
+let g:colorizer_auto_color = 1
+let g:colorizer_enable_devicons = 1
+let g:colorizer_syntax = 1
+]]
+--------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
