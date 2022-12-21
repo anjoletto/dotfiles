@@ -58,4 +58,11 @@ vim.opt.backup = false
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.autochdir = true
+
+vim.api.nvim_create_autocmd({"BufWritePre"}, {
+    group = vim.api.nvim_create_augroup("default_group", {}),
+    pattern = "*",
+    command = [[%s/\s\+$//e]],
+}
+)
 --------------------------------------------------------------------------------
