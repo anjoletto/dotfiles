@@ -7,18 +7,14 @@ vim.keymap.set("n", "<leader>PC", ":PackerCompile<CR>", {})
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
--- fidget
---------------------------------------------------------------------------------
-require("fidget").setup{}
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
 -- telescope
 --------------------------------------------------------------------------------
 vim.keymap.set("n", "<leader>T", ":Telescope<CR>", {})
 vim.keymap.set("n", "<leader>e", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<leader>g", require("telescope.builtin").git_files, {})
 vim.keymap.set("n", "<leader>b", require("telescope.builtin").buffers, {})
+vim.keymap.set("n", "<leader>q", require("telescope.builtin").quickfix, {})
+vim.keymap.set("n", "<leader>d", require("telescope.builtin").diagnostics, {})
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
@@ -28,13 +24,6 @@ vim.opt.undodir = os.getenv("HOME") .. "/.config/nvim/undodir"
 vim.opt.undofile = true
 vim.keymap.set("n", "<leader>U", ":UndotreeToggle<CR>")
 --------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
--- lazygit
---------------------------------------------------------------------------------
-vim.keymap.set("n", "<leader>g", ":LazyGit<CR>", {noremap = true})
---------------------------------------------------------------------------------
-
 
 --------------------------------------------------------------------------------
 -- autopairs
@@ -52,7 +41,6 @@ npairs.setup({
 })
 
 local ts_conds = require('nvim-autopairs.ts-conds')
-
 
 -- press % => %% only while inside a comment or string
 npairs.add_rules({
@@ -108,19 +96,4 @@ require('gitsigns').setup {
     enable = false
   },
 }
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
--- toggle term
---------------------------------------------------------------------------------
-require("toggleterm").setup{
-  direction = "float",
-  float_opts = {
-    border = "curved",
-    width = 80,
-    height = 25,
-  },
-}
-
-vim.keymap.set("n", "<leader>t", "<cmd>:ToggleTerm<CR>", {noremap = true})
 --------------------------------------------------------------------------------
