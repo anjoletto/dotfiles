@@ -51,17 +51,45 @@ npairs.add_rules({
 })
 --------------------------------------------------------------------------------
 
+
+--------------------------------------------------------------------------------
+-- Comment
+--------------------------------------------------------------------------------
+require("Comment").setup({
+  padding = true,
+  sticky = true,
+  ignore = nil,
+  toggler = {
+    line = "<leader>/",
+    block = "<leader>\\",
+  },
+  opleader = {
+    line = "<leader>/",
+    block = "<leader>\\",
+  },
+  extra = {
+    eol = "<leader>A"
+  },
+  mappings = {
+    basic = true,
+    extra = true,
+  },
+  pre_hook = nil,
+  post_hook = nil,
+})
+--------------------------------------------------------------------------------
+
 --------------------------------------------------------------------------------
 -- git signs
 --------------------------------------------------------------------------------
 
 require('gitsigns').setup {
   signs = {
-    add          = {hl = 'gitsignsadd'   , text = '│', numhl='gitsignsaddnr'   , linehl='gitsignsaddln'},
-    change       = {hl = 'gitsignschange', text = '│', numhl='gitsignschangenr', linehl='gitsignschangeln'},
-    delete       = {hl = 'gitsignsdelete', text = '_', numhl='gitsignsdeletenr', linehl='gitsignsdeleteln'},
+    add          = {hl = 'gitsignsadd'   , text = '+', numhl='gitsignsaddnr'   , linehl='gitsignsaddln'},
+    change       = {hl = 'gitsignschange', text = '~', numhl='gitsignschangenr', linehl='gitsignschangeln'},
+    delete       = {hl = 'gitsignsdelete', text = '-', numhl='gitsignsdeletenr', linehl='gitsignsdeleteln'},
     topdelete    = {hl = 'gitsignsdelete', text = '‾', numhl='gitsignsdeletenr', linehl='gitsignsdeleteln'},
-    changedelete = {hl = 'gitsignschange', text = '~', numhl='gitsignschangenr', linehl='gitsignschangeln'},
+    changedelete = {hl = 'gitsignschange', text = '=', numhl='gitsignschangenr', linehl='gitsignschangeln'},
   },
   signcolumn = true,  -- toggle with `:gitsigns toggle_signs`
   numhl      = false, -- toggle with `:gitsigns toggle_numhl`

@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
     end
   })
   use "lewis6991/gitsigns.nvim"
+  use "numToStr/Comment.nvim"
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       requires = { {'nvim-lua/plenary.nvim'} }
