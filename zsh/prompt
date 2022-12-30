@@ -1,33 +1,50 @@
-#autoload -Uz vcs_info
-#setopt prompt_subst
-#
-## used to update clock each second
-##TMOUT=1
-##TRAPALRM(){
-##  zle reset-prompt
-##}
-#
-## empty line before each prompt, except fist
-#precmd() { precmd() { print "" } }
-#
-## version control information (mainly git)
-#precmd_functions+=( vcs_info )
-#zstyle ':vcs_info:*' enable git
-#zstyle ':vcs_info:*' get-revision true
-#zstyle ':vcs_info:*' check-for-changes true
-#zstyle ':vcs_info:*' stagedstr ' ^'
-#zstyle ':vcs_info:*' unstagedstr ' *'
-#zstyle ':vcs_info:*' formats '%F{blue}[%b%u]'
-#
-## set variables for prompt
-#P_INIT="%(?.%F{cyan}.%F{red})%(!.>>.->)%F{gray}"
-#P_TIME="%F{cyan}(%D{%H:%M:%S})"
-#P_HOSTNAME="%F{blue}%m"
-#P_DIR="%F{cyan}%4~"
-#
-#PROMPT=$'$P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
-##PROMPT=$'$P_TIME $P_HOSTNAME:$P_DIR ${vcs_info_msg_0_}\n$P_INIT '
-#RPROMPT=' %{$(echotc UP 1)%} $P_TIME%F{gray}%{$(echotc DO 1)%}'
-##RPROMPT=''
+# ---------------------------------------------------------------------------- #
+# default configuration
+# ---------------------------------------------------------------------------- #
+fpath+=($HOME/.dots/tui-config/zsh/pure/)
+autoload -U promptinit; promptinit
+# ---------------------------------------------------------------------------- #
 
-eval "$(starship init zsh)"
+# ---------------------------------------------------------------------------- #
+# change some options
+# ---------------------------------------------------------------------------- #
+PURE_CMD_MAX_EXEC_TIME=0
+PURE_PROMPT_SYMBOL="->"
+PURE_PROMPT_VICMD_SYMBOL=">>"
+
+PURE_GIT_PULL=0
+PURE_GIT_UNTRACKED_DIRTY=0
+
+zstyle :prompt:pure:git:stash show yes
+
+zstyle :prompt:pure:prompt:success color green
+zstyle :prompt:pure:prompt:error color red
+zstyle :prompt:pure:prompt:continuation color green
+
+zstyle :prompt:pure:host color blue
+zstyle :prompt:pure:path color cyan
+zstyle :prompt:pure:user color cyan
+zstyle :prompt:pure:user:root color red
+zstyle :prompt:pure:virtualenv color yellow
+
+zstyle :prompt:pure:git:branch color yellow
+zstyle :prompt:pure:git:branch:cached color red
+zstyle :prompt:pure:git:dirty color yellow
+zstyle :prompt:pure:git:arrow color yellow
+zstyle :prompt:pure:git:stash color yellow
+zstyle :prompt:pure:git:action color red
+
+
+zstyle :prompt:pure:execution_time color cyan
+zstyle :prompt:pure:suspended_jobs color red
+
+# ---------------------------------------------------------------------------- #
+
+# ---------------------------------------------------------------------------- #
+# use pure and set RPROMPT
+# ---------------------------------------------------------------------------- #
+prompt pure
+
+P_TIME="%F{cyan}(%D{%H:%M:%S})"
+RPROMPT=' %{$(echotc UP 1)%} $P_TIME%F{gray}%{$(echotc DO 1)%}'
+# ---------------------------------------------------------------------------- #
