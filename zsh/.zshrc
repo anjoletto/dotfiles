@@ -6,3 +6,4 @@ source $ZDOTDIR/aliases
 source $ZDOTDIR/custom
 source $ZDOTDIR/fzf_comp
 source $ZDOTDIR/fzf_config
+source $ZDOTDIR/zoxide
