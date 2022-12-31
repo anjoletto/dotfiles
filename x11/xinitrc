@@ -1,4 +1,4 @@
-feh --bg-scale .background-image &
+xsetroot -solid "#161821"
 sxhkd -c $HOME/.config/sxhkd/custom &
 sxhkd -c $HOME/.config/sxhkd/main &
 autorandr --change &
