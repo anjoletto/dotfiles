@@ -1,0 +1,29 @@
+*fg-default:     #D8DEE9
+*fg-alt1:        #ECEFF4
+*fg-alt2:        #E5E9F0
+
+*bg-default:     #2E3440
+*bg-transparent: #002E3440
+*bg-alt1:        #4C566A
+*bg-alt2:        #434C5E
+*bg-alt3:        #3B4252
+
+
+
+*spare-1: #8fbcbb
+*spare-2: #88c0d0
+*spare-3: #81a1c1
+*spare-4: #5e81ac
+*spare-5: #B48EAD
+
+*normal: #D8DEE9
+*alert:  #BF616A
+
+*good:    #A3BE8C
+*goodish: #EBCB8B
+*badish:  #D08770
+*bad:     #BF616A
+
+*bgu: #BF616A
+*bga: #A3BE8C
+*fgi: #E5E9F0

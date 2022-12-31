@@ -1,0 +1,5 @@
+control + super + {l, f, d}
+  xhost + && lxc exec {lab, fei, fc36-dev} -- su user -c 'rofi -show drun'
+
+control + super + w; {v, h, d}
+  autorandr -c {single-vertical, single-horizontal, dual}

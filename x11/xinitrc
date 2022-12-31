@@ -1,0 +1,14 @@
+feh --bg-scale .background-image &
+sxhkd -c $HOME/.config/sxhkd/custom &
+sxhkd -c $HOME/.config/sxhkd/main &
+autorandr --change &
+setxkbmap -layout us -variant altgr-intl -option ctrl:nocaps
+lxqt-policykit-agent &
+nm-applet &
+blueman-applet &
+
+# i3
+
+qtile start
+
+#leftwm
