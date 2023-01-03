@@ -7,8 +7,6 @@ lxqt-policykit-agent &
 nm-applet &
 blueman-applet &
 
-# i3
+i3
 
-qtile start
-
-#leftwm
+#qtile start
