@@ -39,14 +39,12 @@ vim.keymap.set("v", "<", "<gv", {noremap = true})
 ----------------------------------------------------------------------
 -- copy and paste
 ----------------------------------------------------------------------
-vim.keymap.set("v", "<C-c>", '"+y')
-vim.keymap.set("n", "<C-c>", '"+y')
-vim.keymap.set("v", "<C-x>", '"+d')
-vim.keymap.set("n", "<C-x>", '"+d')
-vim.keymap.set("i", "<C-v>", '<ESC>"+pa')
-
-vim.keymap.set("n", "<C-C>", '"+Y')
-vim.keymap.set("v", "<C-C>", '"+Y')
-
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("i", "<leader>P", '<ESC>"+pa')
 vim.keymap.set("x", "<leader>p", '"_dP')
+
+vim.keymap.set("n", "<leader>Y", '"+Y')
+vim.keymap.set("v", "<leader>Y", '"+Y')
+
 ----------------------------------------------------------------------
