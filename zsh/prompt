@@ -14,6 +14,8 @@ PURE_PROMPT_VICMD_SYMBOL=">>"
 
 PURE_GIT_PULL=0
 PURE_GIT_UNTRACKED_DIRTY=0
+PURE_GIT_DOWN_ARROW="↓"
+PURE_GIT_UP_ARROW="↑"
 
 zstyle :prompt:pure:git:stash show yes
 
