@@ -46,7 +46,7 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'filename'},
     lualine_c = {'branch', 'diff', 'diagnostics'},
-    lualine_x = {'fileformat', 'filetype'},
+    lualine_x = {'filetype'},
     lualine_y = {'encoding'},
     lualine_z = {'progress', 'location'},
   },
@@ -54,7 +54,7 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'filename'},
     lualine_c = {'branch', 'diff', 'diagnostics'},
-    lualine_x = {'fileformat', 'filetype'},
+    lualine_x = {'filetype'},
     lualine_y = {'encoding'},
     lualine_z = {'progress', 'location'},
   },
@@ -88,14 +88,4 @@ require("indent_blankline").setup {
 vim.g.netrw_browser_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 30
---------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
--- colorizer
-vim.cmd [[
-let g:colorizer_auto_color = 1
-let g:colorizer_enable_devicons = 1
-let g:colorizer_syntax = 1
-]]
---------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
