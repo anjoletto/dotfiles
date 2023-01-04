@@ -1,4 +1,4 @@
-xsetroot -solid "#161821"
+xsetroot -solid "#2E3440"
 sxhkd -c $HOME/.config/sxhkd/custom &
 sxhkd -c $HOME/.config/sxhkd/main &
 autorandr --change &
