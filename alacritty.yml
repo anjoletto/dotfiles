@@ -247,8 +247,8 @@ schemes:
       cyan:    '#327698'
       white:   '#262a3f'
 
-#colors: *nord
-colors: *iceberg
+colors: *nord
+  #colors: *iceberg
 # ----------------------------------------------------------------------------- #
 
 # Colors (Tomorrow Night)

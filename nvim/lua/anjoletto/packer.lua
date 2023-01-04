@@ -22,8 +22,7 @@ return require('packer').startup(function(use)
   ------------------------------------------------------------------------------
   -- appearance
   ------------------------------------------------------------------------------
-  --use "arcticicestudio/nord-vim"
-  use "cocopon/iceberg.vim"
+  use "arcticicestudio/nord-vim"
   use "nvim-lualine/lualine.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   ------------------------------------------------------------------------------

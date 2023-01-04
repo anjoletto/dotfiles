@@ -12,4 +12,4 @@ combi-modi: "window,drun";
       sorting-method:    "name";
   }
 }
-@theme "iceberg"
+@theme "nord"
