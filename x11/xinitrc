@@ -4,6 +4,7 @@ sxhkd -c $HOME/.config/sxhkd/main &
 autorandr --change &
 setxkbmap -layout us -variant altgr-intl -option ctrl:nocaps
 lxqt-policykit-agent &
+dunst &
 nm-applet &
 blueman-applet &
 
