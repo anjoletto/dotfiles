@@ -52,11 +52,11 @@ show_age_threshold = 60     # show age of messages after 60 seconds
 # ---------------------------------------------------------------------------- #
 # keybidings
 # ---------------------------------------------------------------------------- #
-[shortcuts]
-close = ctrl+shift+space
-close_all = ctrl+space
-history = ctrl+esc
-context = ctrl+shift+comma
+#[shortcuts]
+#close = ctrl+shift+space
+#close_all = ctrl+space
+#history = ctrl+esc
+#context = ctrl+shift+comma
 # ---------------------------------------------------------------------------- #
 
 # ---------------------------------------------------------------------------- #
@@ -64,19 +64,36 @@ context = ctrl+shift+comma
 # ---------------------------------------------------------------------------- #
 [urgency_low]
 timeout = 5
-background = "#161821"
-foreground = "#c6c8d1"
-frame_color = "#b4be82"
+background = "#2E3440"
+foreground = "#D8DEE9"
+frame_color = "#A3BE8C"
 
 [urgency_normal]
 timeout = 10
-background = "#161821"
-foreground = "#c6c8d1"
-frame_color = "#c6c8d1"
+background = "#2E3440"
+foreground = "#D8DEE9"
+frame_color = "#8FBCBB"
 
 [urgency_critical]
 timeout = 0
-background = "#161821"
-foreground = "#c6c8d1"
-frame_color = "#e27878"
+background = "#2E3440"
+foreground = "#D8DEE9"
+frame_color = "#BF616A"
+# ---------------------------------------------------------------------------- #
+
+# ---------------------------------------------------------------------------- #
+# app specific configuration
+# ---------------------------------------------------------------------------- #
+[discord]
+appname = *Discord*
+background = "#2E3440"
+foreground = "#D8DEE9"
+frame_color = "#5E81AC"
+
+[discord2]
+appname = *discord*
+background = "#2E3440"
+foreground = "#D8DEE9"
+frame_color = "#5E81AC"
+
 # ---------------------------------------------------------------------------- #
