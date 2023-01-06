@@ -34,7 +34,6 @@ return require('packer').startup(function(use)
   use "nvim-treesitter/nvim-treesitter-context"
   use 'nvim-treesitter/nvim-treesitter-textobjects'
   use "windwp/nvim-autopairs"
-  use "numToStr/Comment.nvim"
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
       requires = { {'nvim-lua/plenary.nvim'} }
@@ -71,19 +70,9 @@ return require('packer').startup(function(use)
   ------------------------------------------------------------------------------
 
   ------------------------------------------------------------------------------
-  -- plugins by programming languages
-  ------------------------------------------------------------------------------
-
-  ------------------------------------------------------------------------------
-  -- python
-  -- use "psf/black"
-  ------------------------------------------------------------------------------
-
-  ------------------------------------------------------------------------------
   -- go
   -- use "fatih/vim-go"
   ------------------------------------------------------------------------------
-
 
   ------------------------------------------------------------------------------
   -- databases
