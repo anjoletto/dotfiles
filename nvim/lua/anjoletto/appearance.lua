@@ -1,10 +1,7 @@
 --------------------------------------------------------------------------------
 -- colorscheme configuration
 --------------------------------------------------------------------------------
---vim.cmd [[ colorscheme iceberg ]]
-
 vim.cmd([[
-colorscheme nord
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
@@ -18,6 +15,15 @@ let g:nord_bold = 1
 let g:nord_italic = 1
 "let g:nord_italic_comments = 1
 let g:nord_underline = 1
+
+" spell configuration
+augroup nord-theme-overrides
+  autocmd!
+  autocmd ColorScheme nord highlight clear SpellBad
+  autocmd ColorScheme nord highlight SpellBad cterm=underline gui=undercurl ctermfg=1 guifg=1
+augroup END
+
+colorscheme nord
 ]])
 --------------------------------------------------------------------------------
 
@@ -45,18 +51,18 @@ require('lualine').setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = {'filename'},
-    lualine_c = {'branch', 'diff', 'diagnostics'},
-    lualine_x = {'filetype'},
-    lualine_y = {'encoding'},
+    lualine_b = {'filename', 'branch'},
+    lualine_c = {'diff'},
+    lualine_x = {'searchcount','diagnostics'},
+    lualine_y = {'filetype', 'encoding'},
     lualine_z = {'progress', 'location'},
   },
   inactive_sections = {
     lualine_a = {'mode'},
-    lualine_b = {'filename'},
-    lualine_c = {'branch', 'diff', 'diagnostics'},
-    lualine_x = {'filetype'},
-    lualine_y = {'encoding'},
+    lualine_b = {'filename', 'branch'},
+    lualine_c = {'diff'},
+    lualine_x = {'searchcount','diagnostics'},
+    lualine_y = {'filetype', 'encoding'},
     lualine_z = {'progress', 'location'},
   },
   tabline = {},
