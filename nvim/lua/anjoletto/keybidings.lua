@@ -26,7 +26,6 @@ vim.keymap.set("n", "<leader><TAB>", "<C-w><C-r>", {noremap = true})
 ----------------------------------------------------------------------
 -- visual mode
 ----------------------------------------------------------------------
-
 vim.keymap.set("v", "<S-Up>", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<S-Down>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
