@@ -5,7 +5,7 @@ super + space
   rofi -show combi
 
 super + Return
-  alacritty
+  xterm
 
 super + Escape
   i3lock -c 000000 -e -f
