@@ -1,4 +1,8 @@
 xsetroot -solid "#2E3440"
+if [[ -f ~/.Xresources ]]; then
+  xrdb -I$HOME ~/.Xresources
+fi
+
 sxhkd -c $HOME/.config/sxhkd/custom &
 sxhkd -c $HOME/.config/sxhkd/main &
 autorandr --change &
