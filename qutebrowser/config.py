@@ -80,6 +80,6 @@ c.window.hide_decoration = True
 
 c.colors.webpage.darkmode.enabled = True
 
-#config.source('nord-qutebrowser.py')
+config.source('nord-qutebrowser.py')
 
 # ---------------------------------------------------------------------------- #
