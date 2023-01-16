@@ -1,2 +1,0 @@
-control + super + w; {v, h, d}
-  autorandr -c {single-vertical, single-horizontal, dual}
