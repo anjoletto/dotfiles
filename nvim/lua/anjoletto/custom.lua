@@ -5,9 +5,8 @@
 --let g:db_ui_save_location = '~/sql'
 --let g:db_ui_use_nerd_fonts = 1
 --let g:db_ui_winwidth = 30
+--autocmd FileType sql,mysql,plsql lua require("cmp").setup.buffer({ sources = {{ name = "vim-dadbod-completion" }} })
 --]])
 --
---autocmd FileType sql,mysql,plsql lua require("cmp").setup.buffer({ sources = {{ name = "vim-dadbod-completion" }} })
---
---vim.keymap.set("n", "<leader>db", ":DBUIToggle<CR>", {noremap = true})
+--vim.keymap.set("n", "<leader>D", ":DBUIToggle<CR>", {noremap = true})
 --------------------------------------------------------------------------------
