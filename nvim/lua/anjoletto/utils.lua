@@ -1,10 +1,11 @@
 --------------------------------------------------------------------------------
 -- telescope
 --------------------------------------------------------------------------------
-vim.keymap.set("n", "<leader>e", ":Files<CR>", {})
-vim.keymap.set("n", "<leader>g", ":GitFiles<CR>", {})
-vim.keymap.set("n", "<leader>r", ":Rg<CR>", {})
-vim.keymap.set("n", "<leader>a", ":Ag<CR>", {})
+fzflua = require('fzf-lua')
+vim.keymap.set("n", "<leader>e", fzflua.files, {})
+vim.keymap.set("n", "<leader>g", fzflua.git_files, {})
+vim.keymap.set("n", "<leader>r", fzflua.grep, {})
+vim.keymap.set("n", "<leader>d", fzflua.diagnostics_workspace, {})
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

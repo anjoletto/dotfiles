@@ -34,8 +34,7 @@ return require('packer').startup(function(use)
   use "nvim-treesitter/nvim-treesitter-context"
   use 'nvim-treesitter/nvim-treesitter-textobjects'
   use "windwp/nvim-autopairs"
-  use {"junegunn/fzf", run = "fzf#install()"}
-  use "junegunn/fzf.vim"
+  use "ibhagwan/fzf-lua"
   ------------------------------------------------------------------------------
 
   ------------------------------------------------------------------------------
