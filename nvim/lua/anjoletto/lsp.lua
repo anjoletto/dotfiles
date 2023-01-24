@@ -70,10 +70,8 @@ end
 
 vim.lsp.handlers["textDocument/definition"] = goto_definition('split')
 
-
 --------------------------------------------------------------------------------
 -- some key maps
 --------------------------------------------------------------------------------
-vim.keymap.set("n", "<leader>d", vim.diagnostic.setloclist, {noremap = true, silent = true})
 vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, {noremap = true, silent = true})
 --------------------------------------------------------------------------------
