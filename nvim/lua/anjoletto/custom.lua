@@ -7,5 +7,7 @@
 --let g:db_ui_winwidth = 30
 --]])
 --
+--autocmd FileType sql,mysql,plsql lua require("cmp").setup.buffer({ sources = {{ name = "vim-dadbod-completion" }} })
+--
 --vim.keymap.set("n", "<leader>db", ":DBUIToggle<CR>", {noremap = true})
 --------------------------------------------------------------------------------
