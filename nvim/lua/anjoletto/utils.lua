@@ -5,7 +5,7 @@ fzflua = require('fzf-lua')
 vim.keymap.set("n", "<leader>e", fzflua.files, {})
 vim.keymap.set("n", "<leader>g", fzflua.git_files, {})
 vim.keymap.set("n", "<leader>r", fzflua.grep, {})
-vim.keymap.set("n", "<leader>d", fzflua.diagnostics_workspace, {})
+vim.keymap.set("n", "<leader>do", fzflua.diagnostics_workspace, {})
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

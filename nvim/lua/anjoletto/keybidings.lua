@@ -21,6 +21,9 @@ vim.keymap.set("n", "<leader>tn", ":tabnext<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>co", ":copen<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>cp", ":cprevious<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>cn", ":cnext<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, {noremap = true})
+vim.keymap.set("n", "<leader>dp", vim.diagnostic.goto_prev, {noremap = true})
+vim.keymap.set("n", "<leader>dn", vim.diagnostic.goto_next, {noremap = true})
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
