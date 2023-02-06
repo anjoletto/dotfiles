@@ -15,12 +15,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", {noremap = true})
 vim.keymap.set("n", "n", "nzzzv", {noremap = true})
 vim.keymap.set("n", "N", "Nzzzv", {noremap = true})
 
-vim.keymap.set("n", "<leader>c", ":tabnew<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>q", ":tabclose<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>p", ":tabprevious<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>n", ":tabnext<CR>", {noremap = true})
-
-vim.keymap.set("n", "<leader><TAB>", "<C-w><C-r>", {noremap = true})
+vim.keymap.set("n", "<leader>tc", ":tabnew<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>tp", ":tabprevious<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>tn", ":tabnext<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>co", ":copen<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>cp", ":cprevious<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>cn", ":cnext<CR>", {noremap = true})
 ----------------------------------------------------------------------
 
 ----------------------------------------------------------------------
