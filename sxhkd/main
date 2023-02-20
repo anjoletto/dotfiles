@@ -2,7 +2,13 @@
 # default programs for every wm
 # ------------------------------------------------------------ #
 super + space
-  rofi -show combi
+  rofi -show drun
+
+super + w
+  rofi -show window
+
+super + control + space
+  rofi -show run
 
 super + Return
   alacritty
