@@ -1,17 +1,6 @@
-# Configuration files for things that I use
+# Configuration files for things that I use in Github Codespace
 
-TUI:
-- zsh
-- tmux
-- neovim
-- bat
+- Installed:
+    - tmux
 
-GUI:
-- alacritty
-- kitty
-- autorandr (postswitch)
-- gtk
-- dunst
-- rofi
-- sxhkd
-- x11 (xinitrc, user dirs, xresources)
+- Configuration:
