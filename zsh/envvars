@@ -1,6 +1,0 @@
-export DISPLAY=:0
-export EDITOR="nvim"
-export PAGER=bat
-
-PATH=$PATH:$HOME/.local/bin
-PATH=$PATH:$HOME/.local/go/bin
